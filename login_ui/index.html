@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-form-container">
+      <div class="form-container">
+        <div class="img-container">
+          <img src="./assets/logo-removebg-preview (1).png" alt="#" />
+        </div>
+        <br />
+        <br />
+
+        <form>
+          <div class="name">
+            <input type="text" name="name" id="name" placeholder="Username" />
+          </div>
+          <br />
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="flex-container">
+            <div class="save-pwd">
+              <label for="checkbox small" class="helper-txt small"
+                >Remember me</label
+              >
+              <input
+                type="checkbox"
+                name="remember"
+                id="remember"
+                checked="true"
+              />
+            </div>
+            <div>
+              <span class="pwd-reset small"
+                ><a href="#">Forgot Password ?</a></span
+              >
+            </div>
+          </div>
+
+          <br />
+          <div class="login-btn-container">
+            <input type="submit" name="login" id="login" value="Login" />
+          </div>
+          <div class="new-account">
+            <span class="helper-txt small">Not registerd?</span>
+            <span class="small"><a href="#">Create an account</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="./src/script.js"></script>
+</html>
