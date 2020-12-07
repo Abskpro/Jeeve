@@ -76,10 +76,12 @@ h1{
     background-image: url("../assets/unnamed.jpg");
     background-position:center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     height:50%;
     margin-top:10px;
     position:relative;
+    
 }
 
 .banner-text{
@@ -271,3 +273,109 @@ h1{
     flex:1;
 }
 
+/*----------------------------- Responsive --------------------------------------*/
+
+@media only screen and (max-width:900px){
+
+
+     html,body{
+        position: absolute;
+    }
+
+    .small{
+        text-align:center;
+        padding-left:90px;
+        padding-right:90px;
+        width:600px;
+        margin:20px auto;
+    }
+
+    .car-detail-container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        gap:30px;
+    }
+
+    .car-image{
+        width:600px;
+        margin:0 auto;
+    }
+
+     .car-description{
+        height: auto;
+        text-align:center;
+    }
+
+
+    /*Portfolio*/
+    .box-img{
+        flex-basis: 42%;
+    }
+
+
+    /* Contact us */
+    .contact--flex__container{
+        margin:40px;
+        display: flex; 
+        flex-direction:column;
+        justify-content:space-between;
+        gap:40px;
+    }
+
+    .bold{
+        text-align:center;
+    }
+
+    .border_bottom:after{
+            content:'';
+            display:block;
+            position:absolute;
+            left:300px;
+            width:135px;
+            bottom:-5px;
+            border-bottom:5px solid #48a7c7; 
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .portfolio-image__flex{
+        margin-top:40px;
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        gap:40px;
+    }
+
+    .portfolio-1__flex, .portfolio-2__flex{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width:100%;
+        gap:60px;
+    }
+
+    .box-img{
+        margin:0 auto;
+        width:600px;
+        height:400px
+    }
+
+    /*--contact--*/
+    .border_bottom:after{
+        content:'';
+        display:block;
+        position:absolute;
+        left:300px;
+        width:135px;
+        bottom:-5px;
+        border-bottom:5px solid #48a7c7; 
+    }
+
+   
+}
